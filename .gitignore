@@ -1,0 +1,24 @@
+# ===== Keil MDK 编译产物（不需要上传）=====
+Objects/
+Listings/
+DebugConfig/
+*.uvguix.*
+*.dep
+*.bak
+*.o
+*.d
+*.crf
+*.lst
+*.lnp
+*.htm
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.scvd
+JLinkLog.txt
+JLinkSettings/
+
+# ===== GCC 构建（servo-pwm 工程）=====
+build/
