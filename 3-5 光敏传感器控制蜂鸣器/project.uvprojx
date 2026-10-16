@@ -727,6 +727,16 @@
               <FileType>5</FileType>
               <FilePath>.\Haedware\Buzzer.h</FilePath>
             </File>
+            <File>
+              <FileName>LightSensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Haedware\LightSensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>LightSensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Haedware\LightSensor.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
