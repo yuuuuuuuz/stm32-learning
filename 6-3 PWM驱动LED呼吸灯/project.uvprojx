@@ -16,7 +16,7 @@
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F1xx_DFP.2.2.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IROM(0x08000000,0x10000) IRAM(0x20000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IRAM(0x20000000,0x5000) IROM(0x08000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
           <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM))</FlashDriverDll>
@@ -47,7 +47,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>project</OutputName>
+          <OutputName>Project</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -361,15 +361,15 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
-            <v6Lang>0</v6Lang>
-            <v6LangP>0</v6LangP>
+            <v6Lang>1</v6Lang>
+            <v6LangP>1</v6LangP>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\Haedware</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\Hardware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -413,6 +413,11 @@
           <GroupName>Start</GroupName>
           <Files>
             <File>
+              <FileName>startup_stm32f10x_md.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Start\startup_stm32f10x_md.s</FilePath>
+            </File>
+            <File>
               <FileName>core_cm3.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Start\core_cm3.c</FilePath>
@@ -421,11 +426,6 @@
               <FileName>core_cm3.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Start\core_cm3.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f10x_md.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Start\startup_stm32f10x_md.s</FilePath>
             </File>
             <File>
               <FileName>stm32f10x.h</FileName>
@@ -700,47 +700,47 @@
             <File>
               <FileName>LED.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Haedware\LED.c</FilePath>
+              <FilePath>.\Hardware\LED.c</FilePath>
             </File>
             <File>
               <FileName>LED.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Haedware\LED.h</FilePath>
+              <FilePath>.\Hardware\LED.h</FilePath>
             </File>
             <File>
               <FileName>Key.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Haedware\Key.c</FilePath>
+              <FilePath>.\Hardware\Key.c</FilePath>
             </File>
             <File>
               <FileName>Key.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Haedware\Key.h</FilePath>
+              <FilePath>.\Hardware\Key.h</FilePath>
             </File>
             <File>
               <FileName>OLED.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Haedware\OLED.c</FilePath>
+              <FilePath>.\Hardware\OLED.c</FilePath>
             </File>
             <File>
               <FileName>OLED.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Haedware\OLED.h</FilePath>
+              <FilePath>.\Hardware\OLED.h</FilePath>
             </File>
             <File>
               <FileName>OLED_Font.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Haedware\OLED_Font.h</FilePath>
+              <FilePath>.\Hardware\OLED_Font.h</FilePath>
             </File>
             <File>
               <FileName>PWM.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Haedware\PWM.c</FilePath>
+              <FilePath>.\Hardware\PWM.c</FilePath>
             </File>
             <File>
               <FileName>PWM.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Haedware\PWM.h</FilePath>
+              <FilePath>.\Hardware\PWM.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -22,3 +22,6 @@ JLinkSettings/
 
 # ===== GCC 构建（servo-pwm 工程）=====
 build/
+
+# ===== 日志 =====
+*.log
